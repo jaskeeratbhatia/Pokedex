@@ -24,7 +24,7 @@
 		5B3E72BF1F63F7DF004EA6A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3E72C21F63F7DF004EA6A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3E72C41F63F7DF004EA6A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B3E72CA1F6527AA004EA6A3 /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = pokemon.csv; path = "../../../Downloads/pokeapi-master/data/v1/pokemon.csv"; sourceTree = "<group>"; };
+		5B3E72CB1F6529B3004EA6A3 /* pokemon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				5B3E72B71F63F7DF004EA6A3 /* ViewController.swift */,
 				5B3E72B91F63F7DF004EA6A3 /* Main.storyboard */,
 				5B3E72BF1F63F7DF004EA6A3 /* Assets.xcassets */,
-				5B3E72CA1F6527AA004EA6A3 /* pokemon.csv */,
 				5B3E72C11F63F7DF004EA6A3 /* LaunchScreen.storyboard */,
+				5B3E72CB1F6529B3004EA6A3 /* pokemon.csv */,
 				5B3E72C41F63F7DF004EA6A3 /* Info.plist */,
 				5B3E72BC1F63F7DF004EA6A3 /* Pokedex.xcdatamodeld */,
 			);
