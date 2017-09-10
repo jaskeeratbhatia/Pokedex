@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,16 +22,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="Ti9-ft-PTj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="Ti9-ft-PTj">
+                                <rect key="frame" x="0.0" y="121" width="375" height="546"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-51-W4p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.93822246971469236" green="0.26668652688108413" blue="0.27547049237657023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="osL-bT-urd"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lW5-d8-WiJ">
+                                <rect key="frame" x="0.0" y="65" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mJK-dO-2LQ">
+                                <rect key="frame" x="20" y="141" width="335" height="506"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hdc-8h-5uK">
+                                    <size key="itemSize" width="118" height="106"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IKc-Db-VX8">
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="5nc-FC-PpJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="CA9-SD-NYa"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inY-tv-r9A">
+                                                    <rect key="frame" x="0.0" y="80" width="105" height="23.5"/>
+                                                    <color key="backgroundColor" red="0.74917453527450562" green="0.21377477049827576" blue="0.22055816650390625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="4Qw-1b-zxD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="inY-tv-r9A" firstAttribute="top" secondItem="5nc-FC-PpJ" secondAttribute="bottom" id="CDl-mD-SUh"/>
+                                            <constraint firstItem="5nc-FC-PpJ" firstAttribute="top" secondItem="IKc-Db-VX8" secondAttribute="top" id="Doz-ER-fJv"/>
+                                            <constraint firstItem="5nc-FC-PpJ" firstAttribute="leading" secondItem="IKc-Db-VX8" secondAttribute="leading" id="J4h-Rd-x58"/>
+                                            <constraint firstAttribute="trailing" secondItem="5nc-FC-PpJ" secondAttribute="trailing" id="WzG-MZ-esv"/>
+                                            <constraint firstAttribute="trailing" secondItem="inY-tv-r9A" secondAttribute="trailing" id="hg9-pi-enH"/>
+                                            <constraint firstItem="inY-tv-r9A" firstAttribute="leading" secondItem="IKc-Db-VX8" secondAttribute="leading" id="k9e-NC-YX3"/>
+                                        </constraints>
+                                        <size key="customSize" width="105" height="105"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ti9-ft-PTj" secondAttribute="bottom" id="9h8-GE-W1V"/>
-                            <constraint firstItem="Ti9-ft-PTj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="INf-Rg-Gb5"/>
-                            <constraint firstItem="Ti9-ft-PTj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aJV-02-We6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ti9-ft-PTj" secondAttribute="trailing" id="bmd-68-7mF"/>
+                            <constraint firstItem="lW5-d8-WiJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0hY-Mf-3zN"/>
+                            <constraint firstItem="OFj-51-W4p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Bk-nz-mYX"/>
+                            <constraint firstItem="lW5-d8-WiJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Aq-5U-3AT"/>
+                            <constraint firstItem="mJK-dO-2LQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IcV-jo-821"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mJK-dO-2LQ" secondAttribute="bottom" constant="20" id="MC9-08-X1J"/>
+                            <constraint firstItem="lW5-d8-WiJ" firstAttribute="top" secondItem="OFj-51-W4p" secondAttribute="bottom" id="NVx-WX-U8S"/>
+                            <constraint firstItem="OFj-51-W4p" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RrT-zG-uzt"/>
+                            <constraint firstItem="mJK-dO-2LQ" firstAttribute="top" secondItem="lW5-d8-WiJ" secondAttribute="bottom" constant="20" id="h79-21-xDy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mJK-dO-2LQ" secondAttribute="trailing" constant="20" id="iaq-7X-biZ"/>
+                            <constraint firstItem="OFj-51-W4p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sjo-hl-8rS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,6 +108,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="120" height="120"/>
         <image name="Group" width="375" height="667"/>
     </resources>
 </document>
