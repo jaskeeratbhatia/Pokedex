@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B16E4671F94A562008E16C4 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16E4661F94A562008E16C4 /* AppUtil.swift */; };
+		5B16E4681F94AA0A008E16C4 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16E4691F94AA0A008E16C4 /* Alamofire.framework */; };
 		5B3174461F67DCEE00F32B0A /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3174451F67DCED00F32B0A /* csv.swift */; };
 		5B3174481F67E0D000F32B0A /* pokemon2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5B3174471F67E0CF00F32B0A /* pokemon2.csv */; };
 		5B3E72B61F63F7DF004EA6A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E72B51F63F7DF004EA6A3 /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B16E4661F94A562008E16C4 /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		5B16E4691F94AA0A008E16C4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3174451F67DCED00F32B0A /* csv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		5B3174471F67E0CF00F32B0A /* pokemon2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = pokemon2.csv; sourceTree = "<group>"; };
 		5B3E72B21F63F7DF004EA6A3 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B16E4681F94AA0A008E16C4 /* Alamofire.framework in Frameworks */,
 				6E0237BCC3F2D217C26F62E3 /* Pods_Pokedex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +96,7 @@
 				5B3174451F67DCED00F32B0A /* csv.swift */,
 				5B3E72C41F63F7DF004EA6A3 /* Info.plist */,
 				5B3E72BC1F63F7DF004EA6A3 /* Pokedex.xcdatamodeld */,
+				5B16E4661F94A562008E16C4 /* AppUtil.swift */,
 			);
 			path = Pokedex;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 		FDACCE6E509B9D0050850759 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5B16E4691F94AA0A008E16C4 /* Alamofire.framework */,
 				71E45F5459ACA2A1E1C38E2B /* Pods_Pokedex.framework */,
 			);
 			name = Frameworks;
@@ -288,6 +295,7 @@
 				5B3E72B61F63F7DF004EA6A3 /* AppDelegate.swift in Sources */,
 				5B3E72D61F65484B004EA6A3 /* PokeCell.swift in Sources */,
 				5B9E369F1F728FB3008E13D9 /* DetailVC.swift in Sources */,
+				5B16E4671F94A562008E16C4 /* AppUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

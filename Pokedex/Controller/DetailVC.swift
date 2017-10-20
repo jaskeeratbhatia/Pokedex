@@ -27,10 +27,39 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        pokeName.text = pokemon.name
-        // Do any additional setup after loading the view.
+        pokeName.text = pokemon.name.capitalized
+        
+        
+        
+        pokemon.downloadPokemonDetail {
+            //MARK: Code which runs after the network call
+            self.updateUI()
+        }
     }
 
+    
+    func updateUI()
+    {
+        let img  = UIImage(named : "\(pokemon.pokedexId)")
+        pokedexIDtxt.text = "\(pokemon.pokedexId)"
+        weighttxt.text = pokemon.weight
+        heighttxt.text = pokemon.height
+        defensetxt.text = pokemon.defense
+        baseAttacktxt.text = pokemon.baseAttack
+        bioImage.image = img
+        currentEvoImg.image = img
+        typetxt.text = pokemon.type
+        biotxt.text = pokemon.description
+        if pokemon.nextPokemonID == "" {
+            nextEvolutiontxt.text = "No Evolution"
+            nextEvoImg.isHidden = true
+        }
+        else{
+            nextEvolutiontxt.text = "Next Evolution : \(pokemon.nextEvolution)"
+            nextEvoImg.image = UIImage(named : "\(pokemon.nextPokemonID)")
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
